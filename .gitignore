@@ -1,2 +1,5 @@
 # ignore txt
 Descricao_das_atividades.txt
+
+#SimpleCov
+coverage
