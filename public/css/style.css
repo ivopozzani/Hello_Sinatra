@@ -1,5 +1,94 @@
+:root {
+    /*Cores*/
+    --primario: hsl(185, 75%, 39%);
+    --secundario:hsl(229, 23%, 23%);
+    --terciario:hsl(227, 10%, 46%);
+    --neutra: hsl(0, 0%, 59%);
+    --texto: #2f2c2c;
+
+    /*Fontes*/
+    --title-font-size: 20px;
+    --subtitle-font-size: 18px;
+    --font-weight-bold: bold;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+header {
+    background-color: var(--primario);
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header > h1 {
+    color: var(--texto); 
+    font-size: var(--title-font-size);
+    margin: 10px auto 10px auto;
+}
+
+header > nav > a {
+    color: var(--secundario);
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+header > nav > a:hover {
+    transition: 0.2s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+}
+
+main {
+    background-color: var(--neutra);
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+main > h2 {
+    font-size: var(--subtitle-font-size);
+    text-align: left;
+    padding-left: 10px;
+    color: var(--texto);
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-card {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: var(--secundario);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+}
+
+.flex-card > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+}
+
+footer {
+    background-color: var(--primario);
+}
+
+footer > p {
+    margin-left: 5px;
 }
