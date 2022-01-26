@@ -1,0 +1,25 @@
+<% if @page == "homepage" %>
+    <header>
+        <h1>Informações sobre o aspirante a Dev Ivo Pozzani</h1>
+        <nav>
+        <a href="/prs">Pull Requests</a>
+        <a href="/academico">Acadêmico</a>
+        </nav>
+    </header>
+<% elsif @page == "prs" %>
+    <header>
+        <h1>Pull requests Ivo Pozzani</h1>
+        <nav>
+        <a href="/">Home</a>
+        <a href="/academico">Acadêmico</a>
+    </nav>
+</header>
+<% else @page == "academico"%>
+    <header>
+    <h1>Informações Acadêmicas</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/prs">Pull Requests</a>
+    </nav>
+ </header>
+<% end %>
