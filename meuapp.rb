@@ -9,3 +9,7 @@ end
 get '/prs' do
   erb :prs
 end
+
+get '/academico' do
+  erb :academico
+end
