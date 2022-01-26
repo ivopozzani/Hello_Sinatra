@@ -9,3 +9,5 @@ gem 'simplecov', require: false, group: :test
 # gem "rails"
 
 gem 'rspec', '~>3.0'
+
+gem "thin", "~> 1.8"
