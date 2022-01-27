@@ -1,12 +1,16 @@
-<div class="flex-container">
-    <% @data.data.each do |key, items| %>
-    <div class="flex-card">
-            <p><%= key %></p>
-            <ul>
-            <% items.each do |item| %>
-                <li><%= item %></li>
-            <% end %>                
-            </ul>
+ <main>
+    <h2>Principais Assuntos</h2>
+        <div class="flex-container">
+            <% @data.parse_json.each do |key, items| %>
+            <div class="flex-card">
+                    <p><%= key %></p>
+                    <ul>
+                    <% items.each do |item| %>
+                        <li><%= item %></li>
+                    <% end %>                
+                    </ul>
+            </div>
+            <% end %>
+        </div>
     </div>
-    <% end %>
-</div>
+</main>

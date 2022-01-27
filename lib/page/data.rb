@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
+require 'json'
+
 class Data
-  DADOS = { 'Familia' => ['Pai, Mãe', '3 irmãos', 'Nenhum Pet'], 'Educação' => ['Superior Completo', 'SENAI'] }.freeze
+  def initialize(file: 'data.json')
+    @file = file
+  end
 
-  def initialize; end
-
-  def data
-    DADOS
+  def parse_json
+    @parse_json = JSON.parse(File.read(@file))
   end
 end
