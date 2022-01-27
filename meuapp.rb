@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
 require 'sinatra'
+require_relative './lib/page/data'
 
 get '/' do
   @page = 'homepage'
-  erb :homepage
+  @data = Data.new
+  erb :home
 end
 
 get '/prs' do
