@@ -1,10 +1,11 @@
 :root {
     /*Cores*/
-    --primario: hsl(185, 75%, 39%);
-    --secundario:hsl(229, 23%, 23%);
-    --terciario:hsl(227, 10%, 46%);
-    --neutra: hsl(0, 0%, 59%);
-    --texto: #2f2c2c;
+    --primario: hsl(224, 17%, 38%);
+    --secundario:hsl(124, 57%, 41%);
+    --terciario:hsl(129, 25%, 80%);
+    --neutra: hsl(33, 56%, 66%);
+    --texto: hsl(0, 0%, 5%);
+    --texto-titulo: hsl(0, 0%, 100%);
 
     /*Fontes*/
     --title-font-size: 20px;
@@ -33,13 +34,13 @@ header {
 }
 
 header > h1 {
-    color: var(--texto); 
+    color: var(--texto-titulo); 
     font-size: var(--title-font-size);
     margin: 10px auto 10px auto;
 }
 
 header > nav > a {
-    color: var(--secundario);
+    color: var(--texto-titulo);
     text-decoration: none;
     padding: 5px;
     margin: 5px;
@@ -76,7 +77,8 @@ main > h2 {
     padding: 5px;
     border-radius: 5px;
     border-style: solid;
-    border-color: var(--secundario);
+    border-color: var(--texto);
+    background-color: var(--secundario);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
 }
 

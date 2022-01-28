@@ -36,11 +36,12 @@ $ git clone https://github.com/ivopozzani/Hello_Sinatra.git
 $ ruby meuapp.rb
 
 ```
+* Your aplication will be running on "localhost:4567"
 
 * To run rspec test navigate to ./hello_sinatra then run command below (it should return you a report with all examples and failures)
 
 ```
-$ rspec spec --format documentation
+$ rspec meuapp.rb
 
 ```
 
