@@ -1,0 +1,10 @@
+{
+    "Familia": ["pai","mãe","3 irmãos","Nenhum Pet"],
+    "Educacao": ["Superior Completo", "SENAI", "Mestrado", "Outros"],
+    "Hobbies": ["Games","Séries","Atividades ao Ar Livre","Andar de Moto"],
+    "Metas": ["Tornar-se Desenvolvedor de Sistemas","Pai de Família"],
+    "Lar": ["Jundiaí-SP","Ribeirão Preto - SP","Glasgow - UK","São Paulo - SP", "São Bernardo do Campo - SP"],
+    "Curiosidades": ["Minero Criptomoedas","Já Conheço mais a europa do que o Brasil, infelizmente"],
+    "Valores": ["Respeito","Humildade","Honestidade"],
+    "Trabalho": ["Entregador de Jornal","Eletricista","Recepcionista de Hostel","Químico", "Futuro Dev"]
+}
