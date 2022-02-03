@@ -2,14 +2,19 @@
 
 source 'https://rubygems.org'
 
+# Ruby
 ruby '3.1.0'
 
+# Sinatra
 gem 'sinatra'
 
-gem 'simplecov', require: false, group: :test
+# Tests
+group :test do
+  gem 'simplecov', require: false
 
-gem 'rack'
+  gem 'rack'
 
-gem 'rack-test'
+  gem 'rack-test'
 
-gem 'rspec', '~>3.0'
+  gem 'rspec', '~>3.0'
+end
